@@ -1,11 +1,12 @@
 # Vault-Docker-Lab
 
+This deploys a three node Vault Enterprise cluster using Terraform. It uses Integrated Storage as a storage backend, auto unseal using a single node Vault instance providing a transit secrets engine. The 3 node Vault cluster is fronted by an HAProxy load balancer.
+
 ## Requirements
 
 * Docker 
-* Terraform 1.9.5
+* Terraform 1.9.5 or later
 * Vault Enterprise License
-* OpenSSL
 
 ## Setup
 
