@@ -1,3 +1,4 @@
+disable_mlock = true
 ui = true
 log_level = "trace"
 
