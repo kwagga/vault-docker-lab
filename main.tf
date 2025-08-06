@@ -195,7 +195,7 @@ depends_on = [ docker_container.vault_transit ]
 
 resource "vault_token" "autounseal" {
   policies = ["autounseal", "default"]
-  period = "24h"
+  ttl = "8760h" # 1 year bad practice
   metadata = {
     "purpose" = "autounseal"
   }
